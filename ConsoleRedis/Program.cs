@@ -31,6 +31,8 @@ namespace ConsoleRedis
                     
 
 
+
+
                     var q = db.HashGet("P1", msg.ToString());
                     Console.WriteLine(q);
                 }
