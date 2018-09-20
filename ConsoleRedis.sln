@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRedis", "ConsoleRedis\ConsoleRedis.csproj", "{0F88F4B3-B2C3-41CC-9F64-83BADE15466F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "..\..\..\Downloads\net13-bot-perguntas-master\ConsoleApp2\ConsoleApp2.csproj", "{7687B8EC-E53A-40AC-9878-443595F2D70D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0F88F4B3-B2C3-41CC-9F64-83BADE15466F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F88F4B3-B2C3-41CC-9F64-83BADE15466F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F88F4B3-B2C3-41CC-9F64-83BADE15466F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7687B8EC-E53A-40AC-9878-443595F2D70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7687B8EC-E53A-40AC-9878-443595F2D70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7687B8EC-E53A-40AC-9878-443595F2D70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7687B8EC-E53A-40AC-9878-443595F2D70D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

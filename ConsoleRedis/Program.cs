@@ -12,29 +12,19 @@ namespace ConsoleRedis
         {
 
             // Connect
+            //var redis = ConnectionMultiplexer.Connect("191.232.234.20");
             var redis = ConnectionMultiplexer.Connect("localhost");
-            IDatabase db = redis.GetDatabase();
-
-
-
-            db.HashSet("P1", "1+1", "2");
-            db.HashSet("P1", "1+2", "3");
-            db.HashSet("P1", "2+2", "4");
-            db.HashSet("P1", "4+1", "5");
-
+            IDatabase db = redis.GetDatabase();          
 
 
             var sub = redis.GetSubscriber();
-            sub.Subscribe("Oraculo_eh_nois", (ch, msg) => 
+            sub.Subscribe("perguntas", (ch, msg) =>
                 {
-                    
-                    
-
-
-
-
-                    var q = db.HashGet("P1", msg.ToString());
-                    Console.WriteLine(q);
+                    string[] split = msg.ToString().Split(':');
+                    string split2 = split[0].Substring(1, split[0].Length - 1);
+                    int resposta = Convert.ToInt32(split2);
+                    db.HashSet(split[0], "Só os Jeffersons", resposta + resposta);
+                    Console.WriteLine(resposta + resposta);
                 }
             );
 
